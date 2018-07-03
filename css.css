@@ -1,0 +1,185 @@
+@import 'css/font.css';
+@import 'css/_animation.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: #f3f5f7;
+    margin: auto 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+}
+html, body {
+    /* height:auto !important;*/
+ }
+
+#page {
+
+    /*
+         First, we set the top-level element to display:flex. By
+        default, it will orient its children horizontally. We are
+        providing -webkit- versions for Safari and iOS.
+     */
+
+    display: -webkit-flex;
+    display: flex;
+
+    /* Then, we give it a max-width and center it */
+    max-width:1450px;
+    margin:0 auto;
+}
+
+section.main {
+
+    /*
+        We then set the child with the main content of
+        the page to grow automatically and take all the space
+    */
+
+    -webkit-flex-grow:1;
+    flex-grow:1;
+    padding: 49px  0px 0px 2%;
+
+}
+
+aside{
+    /*
+        The sidebar wont grow automatically (flex-grow defaults to 0),
+        and has a width. We should only disable shrinking by setting
+        flex-shrink to 0.
+    */
+    -webkit-flex-shrink:0;
+    flex-shrink:0;
+    width:240px;
+    background-color: white;
+    height: 100vh;
+}
+
+
+.acctionButtonsAbs {
+   position: absolute;
+   background-color: rgba(86, 98, 105, 0.8);
+   bottom: 0;
+   color: #cfd8dc;
+
+}
+
+.butborrad {
+    border-radius: 40px !important;
+    padding: 3px 21px 3px 20px !important;
+    background-color: #4ebd65 !important;
+    color: white !important;
+}
+
+/*
+DIALOG
+*/
+md-dialog {
+    max-width: 32% !important;
+}
+md-toolbar {
+    background-color: transparent !important;
+    color: #555555 !important;
+}
+
+.dialogdemoBasicUsage #popupContainer {
+    position: relative; }
+
+.dialogdemoBasicUsage .footer {
+    width: 100%;
+    text-align: center;
+    margin-left: 20px; }
+
+.dialogdemoBasicUsage .footer, .dialogdemoBasicUsage .footer > code {
+    font-size: 0.8em;
+    margin-top: 50px; }
+
+.dialogdemoBasicUsage button {
+    width: 200px; }
+
+.dialogdemoBasicUsage div#status {
+    color: #c60008; }
+
+.dialogdemoBasicUsage .dialog-demo-prerendered md-checkbox {
+    margin-bottom: 0; }
+
+
+
+/** ASIDE */
+
+aside  .logo {
+    padding: 25px;
+    margin-top: 30px;
+}
+aside .notes {
+    margin-top: 123px;
+    padding: 0 30px 10px 27px;
+}
+aside .notes ul.borderbotom {
+    border-bottom: 1px solid;
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+}
+aside .notes ul.fs2 li  {
+    margin: 30px 0px 0px 15px;
+    color: #cfd8dc;
+}
+
+aside .notes ul.fs2 a, aside .notes ul.fs2  {
+    color: #cfd8dc;
+}
+
+aside .notes ul.fs2 div.active, aside .notes ul.fs2 div.active a {
+    color: #555;
+}
+
+aside .notes ul li.active {
+    color: #555;
+}
+
+
+
+/*RESET */
+a:link {
+    text-decoration: none;
+    color: #555;
+}
+a:visited {
+    color: #555;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+
+/**/
+
+
+.radio, .checkbox {
+    margin: 26px 0;
+    padding: 0;
+}
+.radio, .checkbox, .radio *, .checkbox * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.radio label,  {
+    display: inline-block;
+    margin: 0 26px 0 0;
+    height: 22px;
+    vertical-align: top;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+
