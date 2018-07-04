@@ -45,7 +45,6 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
     $scope.$location = $location;
     $scope.$routeParams = $routeParams;
 
-    console.log("2222");
 
     // NOTES
     $scope.listnotes = [];
@@ -64,6 +63,31 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
         return angular.element(event.srcElement || event.currentTarget);
     }
 
+    $scope.changeColor = function($event, note, boja){
+        idjsdel = note.idjs;
+        data = $scope.listnotes;
+        for(var i = 0; i < data.length; i++) {
+            if(data[i].idjs == idjsdel) {
+                data[i].color = boja;
+                break;
+            }
+        }
+
+        getDataDel = myService.changeColorService(idjsdel,boja);
+        getDataDel.then(function (msg) {
+            console.log(msg.data);
+            if (msg.data.success) {
+                $scope.status = msg.data.error_msg;
+            } else {
+                alert('Node is NOT  Activated');
+            }
+
+        },function(){
+            alert('Error in Deleting Record');
+        });
+
+
+    };
 
     // dialog
     $scope.status = '  ';
@@ -252,19 +276,31 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
 
         })
             .then(function (answer) {
-                $http({
-                    method: 'POST',
-                    data: {'title': answer.title, textnote: answer.textnote, typenote: answer.typenote, idjs : answer.idjs, active : answer.active },
-                    url: "http://masinealati.rs/parametrigarden.php?action=updatenote"
-                }).then(function successCallback(response) {
-                    if (response.data.success) {
 
-                    } else {
-                        $scope.status = response.data.error_msg;
-                    }
-                }, function errorCallback(response) {
+                if (answer==0) {
+                    $scope.status = "You say to to edit :) "
+                } else {
+                    $http({
+                        method: 'POST',
+                        data: {
+                            'title': answer.title,
+                            textnote: answer.textnote,
+                            typenote: answer.typenote,
+                            idjs: answer.idjs,
+                            active: answer.active
+                        },
+                        url: "http://masinealati.rs/parametrigarden.php?action=updatenote"
+                    }).then(function successCallback(response) {
+                        if (response.data.success) {
 
-                });
+                        } else {
+                            $scope.status = response.data.error_msg;
+                        }
+                    }, function errorCallback(response) {
+
+                    });
+                }
+
             }, function () {
                 $scope.status = 'You cancelled the dialog.';
             });
@@ -301,6 +337,16 @@ cr1.service("myService", function ($http) {
             method: "POST",
             data : {'idjs' : noteId },
             url: "http://masinealati.rs/parametrigarden.php?action=sentbacktonotes"
+        });
+        return response;
+    };
+
+    // CHANGE COLORO OF NOTE
+    this.changeColorService = function (noteId,boja) {
+        var response = $http({
+            method: "POST",
+            data : {'idjs' : noteId, 'color' : boja },
+            url: "http://masinealati.rs/parametrigarden.php?action=changecolor"
         });
         return response;
     };

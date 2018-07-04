@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c44d2209-0c89-4224-aa42-5072a55527e5" name="Default" comment="inicial">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/images.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/imagesController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/links.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/linksController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/listdata.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/notes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/notesController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/trash.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/trashController.js" />
-      <change type="DELETED" beforePath="C:\wamp64\www\angularjs\book.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/aside.php" afterPath="$PROJECT_DIR$/pages/aside.php" />
+    <list default="true" id="c44d2209-0c89-4224-aa42-5072a55527e5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/md-fab-speed-dial.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller.js" afterPath="$PROJECT_DIR$/controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css.css" afterPath="$PROJECT_DIR$/css.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/dialog.html" afterPath="$PROJECT_DIR$/template/dialog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script.js" afterPath="$PROJECT_DIR$/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/images.php" afterPath="$PROJECT_DIR$/pages/images.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/listdata.php" afterPath="$PROJECT_DIR$/pages/listdata.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/notes.php" afterPath="$PROJECT_DIR$/pages/notes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/section.php" afterPath="$PROJECT_DIR$/pages/section.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/trash.php" afterPath="$PROJECT_DIR$/pages/trash.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="angularjs.iws" />
@@ -43,11 +33,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="section.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/section.php">
+      <file leaf-file-name="md-fab-speed-dial.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/md-fab-speed-dial.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385">
-              <caret line="47" column="61" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="61" />
+            <state vertical-scroll-proportion="-6.5384617">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#md-icon#0;n#md-button#0;n#md-fab-actions#0;n#md-fab-speed-dial#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listdata.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/listdata.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9615384">
+              <caret line="3" column="75" selection-start-line="3" selection-start-column="75" selection-end-line="3" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -57,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/pages/notes.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-7.1923075">
-              <caret line="11" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <caret line="11" column="18" selection-start-line="5" selection-start-column="16" selection-end-line="11" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -66,64 +68,18 @@
       <file leaf-file-name="trash.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/trash.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.090909">
-              <caret line="46" column="81" selection-start-line="46" selection-start-column="81" selection-end-line="46" selection-end-column="81" />
+            <state vertical-scroll-proportion="-17.0">
+              <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listdata.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/listdata.php">
+      <file leaf-file-name="css.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9230769">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controller.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27272728">
-              <caret line="130" column="8" selection-start-line="130" selection-start-column="8" selection-end-line="130" selection-end-column="8" />
-              <folding>
-                <element signature="e#2642#3307#0" expanded="false" />
-                <element signature="e#4533#5919#0" expanded="false" />
-                <element signature="e#5971#6227#0" expanded="false" />
-                <element signature="e#6315#6634#0" expanded="false" />
-                <element signature="e#6686#7801#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-41.03448">
-              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="angular.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/angular/angular.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27938" column="22" selection-start-line="27938" selection-start-column="22" selection-end-line="27938" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.615385">
-              <caret line="18" column="59" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.47685835">
+              <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -154,22 +110,23 @@
         <option value="$PROJECT_DIR$/css/font.css" />
         <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/controllers/notesController.js" />
-        <option value="$PROJECT_DIR$/css.css" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/controllers/imagesController.js" />
         <option value="$PROJECT_DIR$/controllers/linksController.js" />
         <option value="$PROJECT_DIR$/controllers/trashController.js" />
         <option value="$PROJECT_DIR$/pages/links.php" />
-        <option value="$PROJECT_DIR$/pages/images.php" />
-        <option value="$PROJECT_DIR$/pages/notes.php" />
         <option value="$PROJECT_DIR$/pages/aside.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/script.js" />
-        <option value="$PROJECT_DIR$/pages/section.php" />
         <option value="$PROJECT_DIR$/pages/listdata.php" />
+        <option value="$PROJECT_DIR$/pages/md-fab-speed-dial.php" />
+        <option value="$PROJECT_DIR$/pages/notes.php" />
+        <option value="$PROJECT_DIR$/pages/section.php" />
         <option value="$PROJECT_DIR$/template/dialog.html" />
-        <option value="$PROJECT_DIR$/pages/trash.php" />
         <option value="$PROJECT_DIR$/controller.js" />
+        <option value="$PROJECT_DIR$/pages/images.php" />
+        <option value="$PROJECT_DIR$/pages/trash.php" />
+        <option value="$PROJECT_DIR$/css.css" />
       </list>
     </option>
   </component>
@@ -187,8 +144,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -260,20 +217,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angularjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angularjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -341,20 +284,26 @@
       <option name="project" value="LOCAL" />
       <updated>1530658826738</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="inicial 2">
+      <created>1530733753815</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1530733753815</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40890688" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Serial Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -383,7 +332,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inicial" />
-    <option name="LAST_COMMIT_MESSAGE" value="inicial" />
+    <MESSAGE value="inicial 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="inicial 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -502,14 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="124" column="16" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/imagesController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05711086">
@@ -529,14 +471,6 @@
     <entry file="file://$PROJECT_DIR$/pages/links.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.9615384">
-          <caret line="3" column="74" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/images.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05882353">
           <caret line="3" column="74" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
           <folding />
         </state>
@@ -566,14 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/notes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="11" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.615385">
@@ -598,49 +524,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/section.php">
+    <entry file="file://$PROJECT_DIR$/pages/listdata.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385">
-          <caret line="47" column="61" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="61" />
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="75" selection-start-line="3" selection-start-column="75" selection-end-line="3" selection-end-column="75" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/md-fab-speed-dial.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#md-icon#0;n#md-button#0;n#md-fab-actions#0;n#md-fab-speed-dial#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/dialog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09042553">
-          <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/trash.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.090909">
-          <caret line="46" column="81" selection-start-line="46" selection-start-column="81" selection-end-line="46" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/listdata.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state vertical-scroll-proportion="-18.307692">
+          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27272728">
-          <caret line="130" column="8" selection-start-line="130" selection-start-column="8" selection-end-line="130" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.30555555">
+          <caret line="280" column="55" selection-start-line="280" selection-start-column="37" selection-end-line="280" selection-end-column="55" />
           <folding>
-            <element signature="e#2642#3307#0" expanded="false" />
-            <element signature="e#4533#5919#0" expanded="false" />
-            <element signature="e#5971#6227#0" expanded="false" />
-            <element signature="e#6315#6634#0" expanded="false" />
-            <element signature="e#6686#7801#0" expanded="false" />
+            <element signature="e#3313#3978#0" expanded="false" />
+            <element signature="e#5204#6590#0" expanded="false" />
+            <element signature="e#6642#6898#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/section.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.346153">
+          <caret line="25" column="22" selection-start-line="23" selection-start-column="19" selection-end-line="25" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/images.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3959243">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/notes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075">
+          <caret line="11" column="18" selection-start-line="5" selection-start-column="16" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/trash.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.0">
+          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47685835">
+          <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>

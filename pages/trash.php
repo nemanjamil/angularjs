@@ -5,20 +5,23 @@ require_once('listdata.php');
     <div layout="row" fxLayoutGap="20px" layout-wrap>
 
         <div ng-repeat="note in listnotes | filter:{ active: 0 }" ng-switch on="note.typenote" class="maxsirina">
-            <md-card ng-switch-when="2">
+            <md-card
+                ng-class="
+                {
+                'whitecss': note.color == 1,
+                'lightpink': note.color == 2,
+                'palegreen': note.color == 3,
+                'darkgray': note.color == 4
+                }"
+                ng-switch-when="2">
                 <img ng-src="{{note.textnote}}" class="md-card-image" alt="Picture">
-                <md-card-actions layout="row" layout-align="start center">
-                    <md-button class="md-icon-button" aria-label="Delete"
-                               ng-click="backtoNodes($event,note)">
-                        <span class="icon icon-trash"></span>
-                    </md-button>
-                    <md-button class="md-icon-button" aria-label="Settings" ng-click="editRecord($event,note,$index)">
-                        <span class="icon icon-edit"></span>
-                    </md-button>
-                    <md-button class="md-icon-button" aria-label="Share">
-                        <span class="icon icon-color"></span>
-                    </md-button>
+
+                <md-card-actions layout="row" layout-align="start center" layout-wrap>
+                    <md-button flex="50" ng-click="backtoNodes($event,note)"">Send Back to nodes</md-button>
+                    <md-button flex="40" ng-click="fullRemovefromNodes($event,note)">Remove</md-button>
                 </md-card-actions>
+
+
             </md-card>
             <md-card ng-switch-when="3">
 
@@ -32,7 +35,15 @@ require_once('listdata.php');
                 </md-card-actions>
 
             </md-card>
-            <md-card ng-switch-default>
+            <md-card
+                ng-class="
+                {
+                'whitecss': note.color == 1,
+                'lightpink': note.color == 2,
+                'palegreen': note.color == 3,
+                'darkgray': note.color == 4
+                }"
+                ng-switch-default>
                 <md-card-title>
                     <md-card-title-text>
                         <span class="md-headline">{{note.title}}</span>
