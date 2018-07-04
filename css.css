@@ -14,44 +14,24 @@ body {
     color: #555;
 }
 html, body {
-    /* height:auto !important;*/
+    height:auto !important;
+    /*min-height: 2000px !important;*/
  }
 
 #page {
-
-    /*
-         First, we set the top-level element to display:flex. By
-        default, it will orient its children horizontally. We are
-        providing -webkit- versions for Safari and iOS.
-     */
-
     display: -webkit-flex;
     display: flex;
-
-    /* Then, we give it a max-width and center it */
-    max-width:1450px;
+    max-width:1400px;
     margin:0 auto;
 }
 
 section.main {
-
-    /*
-        We then set the child with the main content of
-        the page to grow automatically and take all the space
-    */
-
     -webkit-flex-grow:1;
     flex-grow:1;
     padding: 49px  0px 0px 2%;
-
 }
 
 aside{
-    /*
-        The sidebar wont grow automatically (flex-grow defaults to 0),
-        and has a width. We should only disable shrinking by setting
-        flex-shrink to 0.
-    */
     -webkit-flex-shrink:0;
     flex-shrink:0;
     width:240px;
@@ -75,6 +55,14 @@ aside{
     color: white !important;
 }
 
+.vidim {
+    visibility: hidden;
+}
+
+/*CARD*/
+.maxsirina{
+    width: 366px;
+}
 /*
 DIALOG
 */
@@ -137,7 +125,7 @@ aside .notes ul.fs2 div.active, aside .notes ul.fs2 div.active a {
     color: #555;
 }
 
-aside .notes ul li.active {
+aside .notes ul li.active, aside .notes ul li.active a {
     color: #555;
 }
 

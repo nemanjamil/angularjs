@@ -8,17 +8,36 @@
     <link href="css.css" rel="stylesheet" type="text/css">
     <link href="node_modules/angular-material/angular-material.min.css" rel="stylesheet" type="text/css">
     <base href="/">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
 </head>
 
 <body>
 
 
-<div id="page" ng-controller="mainController" ng-cloak="">
+<div id="page" ng-controller="mainController"  ng-cloak=""> <!--ng-controller="mainController"-->
+
 
     <?php
     require("pages/aside.php");
-    require("pages/section.php");
+    //require("pages/section.php");
     ?>
+    <section class="main">
+
+        <section layout="row" layout-sm="column" layout-align="end center" layout-wrap>
+            <div layout="row" layout-align="start center" flex>
+                <h1 class="fs30">Notes <span>{{status}}</span></h1>
+                <span flex></span>
+            </div>
+            <md-button class="md-raised butborrad" ng-click="showAdvanced($event)">Add New Note</md-button>
+        </section>
+
+        <div ng-view></div>
+
+
+    </section>
+
 
 </div>
 
@@ -31,6 +50,10 @@
 
 <script src="script.js"></script>
 <script src="controller.js"></script>
+<script src="controllers/notesController.js"></script>
+<script src="controllers/imagesController.js"></script>
+<script src="controllers/linksController.js"></script>
+<script src="controllers/trashController.js"></script>
 
 </body>
 </html>

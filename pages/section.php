@@ -1,35 +1,18 @@
-<section class="main">
+<?php
+require_once('listdata.php');
+?>
+    <div class="md-padding">
+        <div layout="row" fxLayoutGap="20px" layout-wrap>
 
-
-    <section layout="row" layout-sm="column" layout-align="end center" layout-wrap>
-        <div layout="row" layout-align="start center" flex>
-            <h1 class="fs30">Notes <span>{{status}}</span></h1>
-            <span flex></span>
-        </div>
-        <md-button class="md-raised butborrad" ng-click="showAdvanced($event)">Add New Note</md-button>
-
-
-
-    </section>
-
-
-
-        <div class="md-padding" layout-xs="column" layout="row">
-            <div flex-xs flex-gt-xs="50" layout="column">
-                <md-card ng-mouseover="showelement()" ng-mouseout="hideelement()" ng-repeat="note in listnotes | filter: { typenote: 1 }">
-                    <md-card-title>
-                        <md-card-title-text>
-                            <span class="md-headline">{{note.title}}</span>
-                        </md-card-title-text>
-                    </md-card-title>
-                    <md-card-content>
-                        <p>{{note.textnote}}</p>
-                    </md-card-content>
-                    <md-card-actions layout="row" layout-align="start center" ng-style="disableTagButton">
-                        <md-button class="md-icon-button" aria-label="Favorite" ng-click="deleteRecord(note)">
+            <div ng-repeat="note in listnotes | filter:{ active : 1 }" ng-switch on="note.typenote" class="maxsirina">
+                <md-card ng-switch-when="2">
+                    <img ng-src="{{note.textnote}}" class="md-card-image" alt="Picture">
+                    <md-card-actions layout="row" layout-align="start center">
+                        <md-button class="md-icon-button" aria-label="Delete"
+                                   ng-click="deleteRecord($event,note,$index)">
                             <span class="icon icon-trash"></span>
                         </md-button>
-                        <md-button class="md-icon-button" aria-label="Settings" ng-click="editRecord(note)">
+                        <md-button class="md-icon-button" aria-label="Settings" ng-click="editRecord($event,note,$index)">
                             <span class="icon icon-edit"></span>
                         </md-button>
                         <md-button class="md-icon-button" aria-label="Share">
@@ -37,74 +20,55 @@
                         </md-button>
                     </md-card-actions>
                 </md-card>
+                <md-card ng-switch-when="3">
 
-            </div>
+                    <md-card-actions layout="row" layout-align="start center">
+                        <md-button ng-href="{{note.textnote}}" target="_blank">{{note.title}}</md-button>
+                        <md-card-icon-actions>
+                            <md-button ng-href="{{note.textnote}}" target="_blank" class="md-icon-button" aria-label="icon">
+                                <span class="icon icon-new-tab"></span>
+                            </md-button>
+                        </md-card-icon-actions>
+                    </md-card-actions>
+                </md-card>
 
-            <div flex-xs flex-gt-xs="50" layout="column">
-                <md-card ng-style="{'position':'relative'}"  ng-repeat="note in listnotes | filter: { typenote: 2 }">
-                    <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
 
-                    <div class="acctionButtonsAbs">
-                        <md-card-actions layout="row" layout-align="start center">
-                            <md-button class="md-icon-button" aria-label="Favorite">
+                <md-card ng-switch-default ng-mouseenter="showelement($event)" ng-mouseleave="hideelement($event)">
+                        <md-card-title>
+                            <md-card-title-text>
+                                <span class="md-headline">{{note.title}}</span>
+                            </md-card-title-text>
+                        </md-card-title>
+                        <md-card-content>
+                            <p>{{note.textnote}}</p>
+                        </md-card-content>
+                        <md-card-actions layout="row" layout-align="start center" ng-style="disableTagButton"
+                                         class="vidim stasakriti">
+                            <md-button class="md-icon-button" aria-label="Favorite"
+                                       ng-click="deleteRecord($event,note,$index)">
                                 <span class="icon icon-trash"></span>
                             </md-button>
-                            <md-button class="md-icon-button" aria-label="Settings">
+                            <md-button class="md-icon-button" aria-label="Settings" ng-click="editRecord($event,note,$index)">
                                 <span class="icon icon-edit"></span>
                             </md-button>
                             <md-button class="md-icon-button" aria-label="Share">
                                 <span class="icon icon-color"></span>
                             </md-button>
                         </md-card-actions>
-                    </div>
-                </md-card>
+                    </md-card>
+
+
             </div>
 
-            <div flex-xs flex-gt-xs="50" layout="column">
-                <md-card  ng-repeat="note in listnotes | filter: { typenote: 3 }">
-                    <md-card-content>
-                        <p><a href="">{{note.title}}</a></p>
-                    </md-card-content>
-                </md-card>
-            </div>
 
+            <div ng-show="!listnotes.length" flex> <!--ng-if="listnotes.length === 0"-->
+                <div layout="row" layout-align="center">
+                    <img src="illustrations/notes-empty-state.svg" alt="Add note :)">
+                </div>
+            </div>
         </div>
 
 
-        <div>
 
-            <div ng-view></div>
+    </div>
 
-            <div>Input Name</div>
-            <div><input ng-model="name" value="bar"> {{ name }}</div>
-
-            <div>Customer Name</div>
-            <div><input ng-model="newIme.name"></div>
-            <div>Customer Age</div>
-            <div><input ng-model="newIme.age"></div>
-            <button ng-click="addCustomer()"> CLICK</button>
-
-
-            <a href="Book/Moby">Moby</a> |
-            <ul class="example-animate-container">
-                <li class="animate-repeat" ng-repeat="friend in friends">
-                    {{friend.name}} is {{friend.age}} years old.
-                </li>
-                <li ng-if="results.length === 0">
-                    <strong>No results found...</strong>
-                </li>
-            </ul>
-
-             <ul class="example-animate-container">
-                 <li class="animate-repeat" ng-repeat="note in listnotes">
-                     {{note.title}} is {{note.textnote}} and {{note.typenote}}
-                 <li ng-if="results.length === 0">
-                     <strong>No results found...</strong>
-                 </li>
-             </ul>
-
-
-        </div>
-
-
-</section>

@@ -1,5 +1,7 @@
 <md-dialog aria-label="Add/Edit Note">
     <form name="form.userForm"  novalidate>
+        <input type="hidden" ng-model="formdata.idjs">
+        <input type="hidden" ng-model="formdata.active">
         <md-toolbar>
             <div class="md-toolbar-tools">
                 <h2>Add/Edit Note</h2>
@@ -17,7 +19,7 @@
             <div>
 
 
-                <md-radio-group ng-model="formdata.group1">
+                <md-radio-group ng-model="formdata.typenote">
                     <section layout="row" layout-sm="column" layout-align="space-around center" layout-wrap>
                         <md-radio-button value="1" class="md-primary"><span class="icon icon-notes"></span> Note</md-radio-button>
                         <md-radio-button value="2"> <span class="icon icon-images"></span> Image </md-radio-button>
@@ -34,7 +36,7 @@
 
                         <md-input-container class="md-block">
                             <label>Take a note</label>
-                            <input ng-model="formdata.notes">
+                            <input ng-model="formdata.textnote">
                         </md-input-container>
                     </div>
                 </md-content>
@@ -42,7 +44,7 @@
         </md-dialog-content>
 
         <md-dialog-actions layout="row">
-            <md-button ng-click="answer(formdata)">
+            <md-button ng-click="Nouuu">
                 Cancel
             </md-button>
             <md-button ng-click="answer(formdata)">
