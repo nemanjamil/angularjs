@@ -2,9 +2,11 @@
 //require_once('listdata.php');
 ?>
 <div class="md-padding">
-    <div layout="row" fxLayoutGap="20px" layout-wrap>
 
-        <div ng-repeat="note in listnotes | filter:{ active : 1 }" ng-switch on="note.typenote" class="maxsirina">
+    <ul class="dynamic-grid" angular-grid="pics" grid-width="300" gutter-size="10" angular-grid-id="gallery"
+        refresh-on-img-load="false">
+        <li ng-repeat="note in listnotes | filter:{ active : 1 }" ng-switch on="note.typenote" class="grid">
+
             <md-card
                 ng-class="
                 {
@@ -15,14 +17,15 @@
                 }"
 
                 ng-switch-when="2"
+                class="relativeclass"
                 >
-                <img ng-src="{{note.textnote}}" class="md-card-image" alt="Picture">
+                <img  ng-src="{{note.textnote}}" class="md-card-image grid-img" class="" data-actual-width = "300"  data-actual-height="200" alt="Picture">
 
 
-                <md-card-actions layout="row" layout-align="start center">
+                <md-card-actions class="positionofactionbutton" layout="row" layout-align="start center">
 
                     <?php
-                        require("md-fab-speed-dial.php");
+                    require("md-fab-speed-dial.php");
                     ?>
 
                     <!--<md-button class="md-icon-button" aria-label="Delete"
@@ -91,21 +94,28 @@
 
                 <md-card-actions layout="row" layout-align="start center" class="vidim stasakriti">
                     <?php
-                        require("md-fab-speed-dial.php");
+                    require("md-fab-speed-dial.php");
                     ?>
                 </md-card-actions>
 
             </md-card>
 
-        </div>
 
+        </li>
 
         <div ng-show="!listnotes.length" flex> <!--ng-if="listnotes.length === 0"-->
             <div layout="row" layout-align="center">
                 <img src="illustrations/notes-empty-state.svg" alt="Add note :)">
             </div>
         </div>
-    </div>
+
+    </ul>
+
+
+    <!--<div layout="row" fxLayoutGap="20px" layout-wrap>
+        <div ng-repeat="note in listnotes | filter:{ active : 1 }" ng-switch on="note.typenote" class="maxsirina">
+        </div>
+    </div>-->
 
 
 </div>

@@ -141,6 +141,8 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
                 break;
             }
         }
+
+
         var getDataDel = myService.removeNote(idjsdel);
         getDataDel.then(function (msg) {
             console.log("msg : ");

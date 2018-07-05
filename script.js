@@ -1,6 +1,6 @@
 (function (angular) {
     'use strict';
-    var angularmodulename = angular.module('angularmodulename', ['ngAnimate', 'ngRoute', 'ngMaterial', 'ngMessages']);
+    var angularmodulename = angular.module('angularmodulename', ['ngAnimate', 'ngRoute', 'ngMaterial', 'ngMessages','angularGrid']);
 
 
 
@@ -16,7 +16,7 @@
                 resolve: {
                     delay: function ($q, $timeout) {
                         var delay = $q.defer();
-                        $timeout(delay.resolve, 1000);
+                        $timeout(delay.resolve, 500);
                         return delay.promise;
                     }
                 }
@@ -29,7 +29,7 @@
                 resolve: {
                     delay: function ($q, $timeout) {
                         var delay = $q.defer();
-                        $timeout(delay.resolve, 1000);
+                        $timeout(delay.resolve, 500);
                         return delay.promise;
                     }
                 }
@@ -42,7 +42,7 @@
                 resolve: {
                     delay: function ($q, $timeout) {
                         var delay = $q.defer();
-                        $timeout(delay.resolve, 1000);
+                        $timeout(delay.resolve, 500);
                         return delay.promise;
                     }
                 }
@@ -55,7 +55,7 @@
                 resolve: {
                     delay: function ($q, $timeout) {
                         var delay = $q.defer();
-                        $timeout(delay.resolve, 1000);
+                        $timeout(delay.resolve, 500);
                         return delay.promise;
                     }
                 }

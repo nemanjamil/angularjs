@@ -32,7 +32,7 @@
                 <span flex></span>
             </div>
             <div ng-if="$route.current.titlecontroller == 'Trash'">
-                <md-button class="md-accent md-raised" ng-click="allTrash()">Trash</md-button>
+                <md-button class="butborradred md-raised" ng-click="allTrash()">Trash</md-button>
             </div>
             <div ng-if="$route.current.titlecontroller != 'Trash'">
                 <md-button class="md-raised butborrad" ng-click="showAdvanced($event)">Add New Note</md-button>
@@ -54,7 +54,9 @@
 <script src="node_modules/angular-aria/angular-aria.min.js"></script>
 <script src="node_modules/angular-messages/angular-messages.min.js"></script>
 <script src="node_modules/angular-material/angular-material.min.js"></script>
+<script src="node_modules/angulargrid/angulargrid.min.js"></script>
 
+<!--In production join all js-->
 <script src="script.js"></script>
 <script src="controller.js"></script>
 <script src="controllers/notesController.js"></script>

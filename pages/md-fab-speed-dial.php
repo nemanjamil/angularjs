@@ -28,7 +28,7 @@
         </md-button>
 
         <md-button class="md-fab md-raised md-mini" ng-click="changeColor($event,note,'3')">
-            <md-icon style="color: PaleGreen  ">lens</md-icon>
+            <md-icon style="color: LightSkyBlue  ">lens</md-icon>
             <md-tooltip>PaleGreen</md-tooltip>
         </md-button>
 

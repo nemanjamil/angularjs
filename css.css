@@ -47,11 +47,24 @@ aside {
     color: #cfd8dc;
 
 }
-
+.positionofactionbutton {
+    position: absolute;
+    bottom: 0;
+}
+.relativeclass {
+    position: relative;
+}
 .butborrad {
     border-radius: 40px !important;
     padding: 3px 21px 3px 20px !important;
     background-color: #4ebd65 !important;
+    color: white !important;
+}
+
+.butborradred {
+    border-radius: 40px !important;
+    padding: 3px 21px 3px 20px !important;
+    background-color: #bd3d1a !important;
     color: white !important;
 }
 
@@ -63,16 +76,46 @@ aside {
     background-color: white;
 }
 .lightpink {
-    background-color: MistyRose; /*LightPink;*/
+    background-color: #ffc5c0; /*LightPink;*/
 }
 .palegreen {
-    background-color: AliceBlue; /*PaleGreen;*/
+    background-color: #b7e9ff; /*PaleGreen;*/
 }
 .darkgray {
-    background-color: darkgray;
+    background-color: #cfd8dc;
 }
 
 
+
+/*
+GRID
+*/
+ul.dynamic-grid li md-card {
+    margin: 0 !important;
+}
+.grid {
+    border: 1px solid #cccccc;
+    list-style: none;
+    background: #ffffff;
+    box-sizing: border-box;
+    -moz-box-sizing : border-box;
+    -webkit-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+.grid-img {
+    width: 100%;
+    vertical-align: middle;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.grid-img.img-loaded{
+    visibility: visible;
+    opacity: 1;
+}
 
 
 /*CARD*/
