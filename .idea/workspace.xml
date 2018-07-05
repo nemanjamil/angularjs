@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c44d2209-0c89-4224-aa42-5072a55527e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/md-fab-speed-dial.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller.js" afterPath="$PROJECT_DIR$/controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css.css" afterPath="$PROJECT_DIR$/css.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/dialog.html" afterPath="$PROJECT_DIR$/template/dialog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/images.php" afterPath="$PROJECT_DIR$/pages/images.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/listdata.php" afterPath="$PROJECT_DIR$/pages/listdata.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/notes.php" afterPath="$PROJECT_DIR$/pages/notes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/imagesController.js" afterPath="$PROJECT_DIR$/controllers/imagesController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script.js" afterPath="$PROJECT_DIR$/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/section.php" afterPath="$PROJECT_DIR$/pages/section.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/trash.php" afterPath="$PROJECT_DIR$/pages/trash.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="angularjs.iws" />
@@ -33,54 +30,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="md-fab-speed-dial.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/md-fab-speed-dial.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="-18.307692">
+              <caret line="34" column="73" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="css.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="82" column="21" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
               <folding>
-                <element signature="n#style#0;n#md-icon#0;n#md-button#0;n#md-fab-actions#0;n#md-fab-speed-dial#0;n#!!top" expanded="true" />
+                <element signature="e#3532#4197#0" expanded="false" />
+                <element signature="e#5423#6847#0" expanded="false" />
+                <element signature="e#6899#7155#0" expanded="false" />
+                <element signature="e#7243#7562#0" expanded="false" />
+                <element signature="e#7614#9075#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listdata.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/listdata.php">
+      <file leaf-file-name="imagesController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/imagesController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384">
-              <caret line="3" column="75" selection-start-line="3" selection-start-column="75" selection-end-line="3" selection-end-column="75" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/notes.php">
+      <file leaf-file-name="aside.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/aside.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1923075">
-              <caret line="11" column="18" selection-start-line="5" selection-start-column="16" selection-end-line="11" selection-end-column="18" />
+            <state vertical-scroll-proportion="-11.076923">
+              <caret line="24" column="60" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trash.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/trash.php">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.0">
-              <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="66" column="39" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="css.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css.css">
+      <file leaf-file-name="section.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/section.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47685835">
-              <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
-              <folding />
+            <state vertical-scroll-proportion="0.14847161">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+              <folding>
+                <element signature="n#md-card#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#md-card#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#md-card#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,22 +136,22 @@
         <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/controllers/notesController.js" />
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/controllers/imagesController.js" />
         <option value="$PROJECT_DIR$/controllers/linksController.js" />
         <option value="$PROJECT_DIR$/controllers/trashController.js" />
         <option value="$PROJECT_DIR$/pages/links.php" />
         <option value="$PROJECT_DIR$/pages/aside.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/script.js" />
         <option value="$PROJECT_DIR$/pages/listdata.php" />
         <option value="$PROJECT_DIR$/pages/md-fab-speed-dial.php" />
         <option value="$PROJECT_DIR$/pages/notes.php" />
-        <option value="$PROJECT_DIR$/pages/section.php" />
         <option value="$PROJECT_DIR$/template/dialog.html" />
-        <option value="$PROJECT_DIR$/controller.js" />
         <option value="$PROJECT_DIR$/pages/images.php" />
         <option value="$PROJECT_DIR$/pages/trash.php" />
+        <option value="$PROJECT_DIR$/controllers/imagesController.js" />
+        <option value="$PROJECT_DIR$/script.js" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/controller.js" />
         <option value="$PROJECT_DIR$/css.css" />
+        <option value="$PROJECT_DIR$/pages/section.php" />
       </list>
     </option>
   </component>
@@ -217,6 +242,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -290,7 +329,13 @@
       <option name="project" value="LOCAL" />
       <updated>1530733753815</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="bojice">
+      <created>1530746680779</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1530746680779</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -333,7 +378,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inicial" />
     <MESSAGE value="inicial 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="inicial 2" />
+    <MESSAGE value="bojice" />
+    <option name="LAST_COMMIT_MESSAGE" value="bojice" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -452,14 +498,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/imagesController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05711086">
-          <caret line="3" column="36" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/trashController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07614782">
@@ -472,14 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.9615384">
           <caret line="3" column="74" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/aside.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.730769">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -500,26 +530,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.615385">
-          <caret line="18" column="59" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/angular/angular.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27938" column="22" selection-start-line="27938" selection-start-column="22" selection-end-line="27938" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-41.03448">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -537,7 +551,7 @@
         <state vertical-scroll-proportion="-6.5384617">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#md-icon#0;n#md-button#0;n#md-fab-actions#0;n#md-fab-speed-dial#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#md-icon#0;n#md-button#0;n#md-fab-actions#0;n#md-fab-speed-dial#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -546,26 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.307692">
           <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30555555">
-          <caret line="280" column="55" selection-start-line="280" selection-start-column="37" selection-end-line="280" selection-end-column="55" />
-          <folding>
-            <element signature="e#3313#3978#0" expanded="false" />
-            <element signature="e#5204#6590#0" expanded="false" />
-            <element signature="e#6642#6898#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/section.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.346153">
-          <caret line="25" column="22" selection-start-line="23" selection-start-column="19" selection-end-line="25" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -594,11 +588,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pages/aside.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.076923">
+          <caret line="24" column="60" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/imagesController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="39" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.307692">
+          <caret line="34" column="73" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
+          <folding>
+            <element signature="e#3532#4197#0" expanded="false" />
+            <element signature="e#5423#6847#0" expanded="false" />
+            <element signature="e#6899#7155#0" expanded="false" />
+            <element signature="e#7243#7562#0" expanded="false" />
+            <element signature="e#7614#9075#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47685835">
-          <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="21" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/section.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14847161">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <element signature="n#md-card#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#md-card#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#md-card#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

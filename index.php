@@ -27,10 +27,17 @@
 
         <section layout="row" layout-sm="column" layout-align="end center" layout-wrap>
             <div layout="row" layout-align="start center" flex>
-                <h1 class="fs30">Notes <span>{{status}}</span></h1>
+                <div></div>
+                <h1 class="fs30">{{$route.current.titlecontroller}} <span>{{status}}</span></h1>
                 <span flex></span>
             </div>
-            <md-button class="md-raised butborrad" ng-click="showAdvanced($event)">Add New Note</md-button>
+            <div ng-if="$route.current.titlecontroller == 'Trash'">
+                <md-button class="md-accent md-raised" ng-click="allTrash()">Trash</md-button>
+            </div>
+            <div ng-if="$route.current.titlecontroller != 'Trash'">
+                <md-button class="md-raised butborrad" ng-click="showAdvanced($event)">Add New Note</md-button>
+            </div>
+
         </section>
 
         <div ng-view></div>

@@ -1,5 +1,5 @@
 <?php
-require_once('listdata.php');
+//require_once('listdata.php');
 ?>
 <div class="md-padding">
     <div layout="row" fxLayoutGap="20px" layout-wrap>
@@ -39,6 +39,7 @@ require_once('listdata.php');
 
 
             </md-card>
+
             <md-card ng-switch-when="3">
 
                 <md-card-actions layout="row" layout-align="start center">
@@ -55,6 +56,7 @@ require_once('listdata.php');
             <md-card
                 ng-class="
                 {
+
                 'whitecss': note.color == 1,
                 'lightpink': note.color == 2,
                 'palegreen': note.color == 3,

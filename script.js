@@ -12,6 +12,7 @@
             .when('/', {
                 templateUrl: 'pages/section.php',
                 //controller: 'mainController', // defined in index.php
+                titlecontroller: "All Notes",
                 resolve: {
                     delay: function ($q, $timeout) {
                         var delay = $q.defer();
@@ -24,6 +25,7 @@
             .when('/notes', {
                 templateUrl: 'pages/notes.php',
                 controller: 'NotesController',
+                titlecontroller: "Notes",
                 resolve: {
                     delay: function ($q, $timeout) {
                         var delay = $q.defer();
@@ -36,6 +38,7 @@
             .when('/slike', {
                 templateUrl: 'pages/images.php',
                 controller: 'ImagesController',
+                titlecontroller: "Images",
                 resolve: {
                     delay: function ($q, $timeout) {
                         var delay = $q.defer();
@@ -48,6 +51,7 @@
             .when('/links', {
                 templateUrl: 'pages/links.php',
                 controller: 'LinksController',
+                titlecontroller: "Links",
                 resolve: {
                     delay: function ($q, $timeout) {
                         var delay = $q.defer();
@@ -60,6 +64,7 @@
             .when('/trash', {
                 templateUrl: 'pages/trash.php',
                 controller: 'TrashController',
+                titlecontroller: "Trash",
                 resolve: {
                     delay: function ($q, $timeout) {
                         var delay = $q.defer();

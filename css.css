@@ -29,7 +29,7 @@ html, body {
 section.main {
     -webkit-flex-grow: 1;
     flex-grow: 1;
-    padding: 49px 0px 0px 2%;
+    padding: 43px 0px 0px 2%;
 }
 
 aside {
@@ -79,7 +79,9 @@ aside {
 .maxsirina {
     width: 366px;
 }
-
+.minvisina {
+    min-height: 300px;
+}
 /*
 DIALOG
 */

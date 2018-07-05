@@ -49,6 +49,16 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
     // NOTES
     $scope.listnotes = [];
 
+    $scope.allTrash = function(){
+        data = $scope.listnotes;
+        for(var i = 0; i < data.length; i++) {
+            if(data[i].active == 0) {
+               data.splice(i, 1);
+            }
+        }
+
+    };
+
     $scope.showelement = function (event) {
         var el = getElement(event);
         angular.element(el).find('md-card-actions').removeClass('vidim');
@@ -219,7 +229,8 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
                             textnote: answer.textnote,
                             typenote: answer.typenote,
                             idjs: response.data.newid,
-                            active: 1
+                            active: 1,
+                            color: 1
 
                         });
 
