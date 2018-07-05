@@ -28,7 +28,7 @@
         <section layout="row" layout-sm="column" layout-align="end center" layout-wrap>
             <div layout="row" layout-align="start center" flex>
                 <div></div>
-                <h1 class="fs30">{{$route.current.titlecontroller}} <span>{{status}}</span></h1>
+                <h1 class="fs30">{{$route.current.titlecontroller}}</h1>
                 <span flex></span>
             </div>
             <div ng-if="$route.current.titlecontroller == 'Trash'">
@@ -42,6 +42,8 @@
 
         <div ng-view></div>
 
+
+        <span style="position: absolute;bottom: 0;right: 15px">{{status}}</span>
 
     </section>
 

@@ -291,7 +291,7 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
             .then(function (answer) {
 
                 if (answer==0) {
-                    $scope.status = "You say to to edit :) "
+                    $scope.status = "You say no to edit :) "
                 } else {
                     $http({
                         method: 'POST',
