@@ -11,8 +11,8 @@
         $routeProvider
 
             .when('/', {
-                templateUrl: 'pages/section.php',
-                //controller: 'mainController', // defined in index.php
+                templateUrl: 'pages/section.html',
+                //controller: 'mainController', // defined in index.html
                 titlecontroller: "All Notes",
                 resolve: {
                     delay: function ($q, $timeout) {
@@ -24,7 +24,7 @@
             })
 
             .when('/notes', {
-                templateUrl: 'pages/notes.php',
+                templateUrl: 'pages/notes.html',
                 controller: 'NotesController',
                 titlecontroller: "Notes",
                 resolve: {
@@ -37,7 +37,7 @@
             })
 
             .when('/slike', {
-                templateUrl: 'pages/images.php',
+                templateUrl: 'pages/images.html',
                 controller: 'ImagesController',
                 titlecontroller: "Images",
                 resolve: {
@@ -50,7 +50,7 @@
             })
 
             .when('/links', {
-                templateUrl: 'pages/links.php',
+                templateUrl: 'pages/links.html',
                 controller: 'LinksController',
                 titlecontroller: "Links",
                 resolve: {
@@ -63,7 +63,7 @@
             })
 
             .when('/trash', {
-                templateUrl: 'pages/trash.php',
+                templateUrl: 'pages/trash.html',
                 controller: 'TrashController',
                 titlecontroller: "Trash",
                 resolve: {
