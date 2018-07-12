@@ -1,45 +1,6 @@
 var cr1 = angular.module('angularmodulename');
 
 
-cr1.factory('simpleFactory', function () {
-    var friends = [
-        {name: 'John', age: 25},
-        {name: 'Mary', age: 40},
-        {name: 'Peter', age: 85},
-        {name: 'Siki', age: 85}
-    ];
-    var factory = {};
-    factory.getFriends = function () {
-        return friends;
-    }
-
-    factory.postFriend = function (friend) {
-
-    }
-
-    return factory;
-});
-
-cr1.factory('listOfNotes', function () {
-    var notesList = [
-        {title: 'Naslov Note', textnote: "tekst note", typenote: 1, idjs: 1, active : 1},
-        {title: 'Naslov Image', textnote: "tekst Image", typenote: 2, idjs: 2,active : 1},
-        {title: 'Naslov Link', textnote: "tekst Link", typenote: 3, idjs: 3,active : 1},
-        {title: 'Naslov Note', textnote: "tekst note", typenote: 1, idjs: 4,active : 1}
-
-    ];
-    var factory = {};
-    factory.getAllNotesFactory = function () {
-        return notesList;
-    }
-
-    notesList.postFriend = function (note) {
-
-    }
-
-    return factory;
-});
-
 cr1.controller('mainController', function ($scope, $http, $route, $routeParams, $location, simpleFactory, listOfNotes, myService, $mdDialog) {
     $scope.$route = $route;
     $scope.$location = $location;
@@ -201,8 +162,6 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
             alert('Error in getting records');
         });
     }
-
-
 
 
      // ADD DIALOG
