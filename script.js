@@ -1,6 +1,7 @@
 (function (angular) {
     'use strict';
-    var angularmodulename = angular.module('angularmodulename', ['ngAnimate', 'ngRoute', 'ngMaterial', 'ngMessages','angularGrid']);
+    var angularmodulename = angular.module('angularmodulename',
+        ['ngAnimate', 'ngRoute', 'ngMaterial', 'ngMessages','angularGrid']);
 
 
 
