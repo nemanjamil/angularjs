@@ -1,7 +1,7 @@
 var cr1 = angular.module('angularmodulename');
 
 
-cr1.controller('mainController', function ($scope, $http, $route, $routeParams, $location, simpleFactory, listOfNotes, myService, $mdDialog) {
+cr1.controller('mainController', function ($scope, $http, $route, $routeParams, $location, myService, $mdDialog) {
     $scope.$route = $route;
     $scope.$location = $location;
     $scope.$routeParams = $routeParams;
