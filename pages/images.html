@@ -1,51 +1,90 @@
 <div class="md-padding">
-    <div layout="row" fxLayoutGap="20px" layout-wrap>
 
-        <div ng-repeat="note in listnotes | filter:{ typenote: 2,active: 1}" ng-switch on="note.typenote"
-             class="maxsirina">
-
+    <ul class="dynamic-grid" angular-grid="pics" grid-width="300" gutter-size="10" angular-grid-id="gallery"
+        refresh-on-img-load="false">
+        <li ng-repeat="note in listnotes | filter:{ typenote: 2,active: 1}" ng-switch on="note.typenote" class="grid">
 
             <md-card
-                ng-class="
+                    ng-class="
                 {
                 'whitecss': note.color == 1,
                 'lightpink': note.color == 2,
                 'palegreen': note.color == 3,
                 'darkgray': note.color == 4
                 }"
-                ng-switch-when="2"
-                class="relativeclass"
-                >
-                <img ng-src="{{note.textnote}}" class="md-card-image" alt="Picture">
+                    ng-switch-when="2"
+                    class="relativeclass"
+                    >
+                <img  ng-src="{{note.textnote}}" class="md-card-image grid-img" class="" data-actual-width = "300"  data-actual-height="200" alt="Picture">
 
-                <div class="positionofactionbutton">
-                    <md-card-actions layout="row" layout-align="start center">
-                        <?php
-                        require("md-fab-speed-dial.php");
-                        ?>
-                        <!-- <md-button class="md-icon-button" aria-label="Delete"
-                                    ng-click="deleteRecord($event,note,$index)">
-                             <span class="icon icon-trash"></span>
-                         </md-button>
-                         <md-button class="md-icon-button" aria-label="Settings" ng-click="editRecord($event,note,$index)">
-                             <span class="icon icon-edit"></span>
-                         </md-button>
-                         <md-button class="md-icon-button" aria-label="Share">
-                             <span class="icon icon-color"></span>
-                         </md-button>-->
-                    </md-card-actions>
-                </div>
+                <md-card-actions class="positionofactionbutton" layout="row" layout-align="start center">
+
+                    <md-button class="md-icon-button" aria-label="Favorite"
+                               ng-click="deleteRecord($event,note,$index)">
+                        <span class="icon icon-trash"></span>
+                        <md-tooltip md-direction="right|bottom">Delete</md-tooltip>
+                    </md-button>
+
+                    <md-button class="md-icon-button" aria-label="Settings" ng-click="editRecord($event,note,$index)">
+                        <span class="icon icon-edit"></span>
+                        <md-tooltip md-direction="right|bottom">Update</md-tooltip>
+                    </md-button>
+
+                    <md-fab-speed-dial md-open="false" md-direction="right" class="md-scale">
+                        <md-fab-trigger>
+                            <md-button class="md-icon-button" aria-label="Share">
+                                <span class="icon icon-color"></span>
+                                <md-tooltip md-direction="right|bottom">Change color</md-tooltip>
+                            </md-button>
+                        </md-fab-trigger>
+                        <md-fab-actions>
+                            <md-button class="md-fab md-raised md-mini" ng-click="changeColor($event,note,'1')">
+                                <md-icon style="color: white">lens</md-icon>
+                                <md-tooltip>White</md-tooltip>
+                            </md-button>
+
+                            <md-button class="md-fab md-raised md-mini" ng-click="changeColor($event,note,'2')">
+                                <md-icon style="color: LightPink ">lens</md-icon>
+                                <md-tooltip>LightPink</md-tooltip>
+                            </md-button>
+
+                            <md-button class="md-fab md-raised md-mini" ng-click="changeColor($event,note,'3')">
+                                <md-icon style="color: LightSkyBlue  ">lens</md-icon>
+                                <md-tooltip>PaleGreen</md-tooltip>
+                            </md-button>
+
+                            <md-button class="md-fab md-raised md-mini" ng-click="changeColor($event,note,'4')">
+                                <md-icon style="color: darkgray ">lens</md-icon>
+                                <md-tooltip>DarkGray</md-tooltip>
+                            </md-button>
+                        </md-fab-actions>
+                    </md-fab-speed-dial>
+
+                    <!--<md-button class="md-icon-button" aria-label="Delete"
+                               ng-click="deleteRecord($event,note,$index)">
+                        <span class="icon icon-trash"></span>
+                    </md-button>
+                    <md-button class="md-icon-button" aria-label="Settings" ng-click="editRecord($event,note,$index)">
+                        <span class="icon icon-edit"></span>
+                    </md-button>
+                    <md-button class="md-icon-button" aria-label="Share">
+                        <span class="icon icon-color"></span>
+                    </md-button>-->
+                </md-card-actions>
+
+
             </md-card>
 
-        </div>
 
+        </li>
 
         <div ng-show="!listnotes.length" flex> <!--ng-if="listnotes.length === 0"-->
             <div layout="row" layout-align="center">
                 <img src="illustrations/notes-empty-state.svg" alt="Add note :)">
             </div>
         </div>
-    </div>
+
+    </ul>
 
 
 </div>

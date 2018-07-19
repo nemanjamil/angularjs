@@ -1,23 +1,18 @@
 var cr1 = angular.module('angularmodulename');
-
-
 cr1.controller('mainController', function ($scope, $http, $route, $routeParams, $location, myService, $mdDialog) {
     $scope.$route = $route;
     $scope.$location = $location;
     $scope.$routeParams = $routeParams;
 
+    //$scope.listnotes = [];
 
-    // NOTES
-    $scope.listnotes = [];
-
-    $scope.allTrash = function(){
+    $scope.allTrash = function () {
         data = $scope.listnotes;
-        for(var i = 0; i < data.length; i++) {
-            if(data[i].active == 0) {
-               data.splice(i, 1);
+        for (var i = 0; i < data.length; i++) {
+            if (data[i].active == 0) {
+                data.splice(i, 1);
             }
         }
-
     };
 
     $scope.showelement = function (event) {
@@ -34,17 +29,17 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
         return angular.element(event.srcElement || event.currentTarget);
     }
 
-    $scope.changeColor = function($event, note, boja){
+    $scope.changeColor = function ($event, note, boja) {
         idjsdel = note.idjs;
         data = $scope.listnotes;
-        for(var i = 0; i < data.length; i++) {
-            if(data[i].idjs == idjsdel) {
+        for (var i = 0; i < data.length; i++) {
+            if (data[i].idjs == idjsdel) {
                 data[i].color = boja;
                 break;
             }
         }
 
-        getDataDel = myService.changeColorService(idjsdel,boja);
+        getDataDel = myService.changeColorService(idjsdel, boja);
         getDataDel.then(function (msg) {
             console.log(msg.data);
             if (msg.data.success) {
@@ -53,7 +48,7 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
                 alert('Node is NOT  Activated');
             }
 
-        },function(){
+        }, function () {
             alert('Error in Deleting Record');
         });
 
@@ -64,11 +59,11 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
     $scope.status = '  ';
     $scope.customFullscreen = false;
 
-    $scope.backtoNodes = function($event, note){
+    $scope.backtoNodes = function ($event, note) {
         idjsdel = note.idjs;
         datadel = $scope.listnotes;
-        for(var i = 0; i < datadel.length; i++) {
-            if(datadel[i].idjs == idjsdel) {
+        for (var i = 0; i < datadel.length; i++) {
+            if (datadel[i].idjs == idjsdel) {
                 datadel[i].active = 1;
                 break;
             }
@@ -82,27 +77,21 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
             } else {
                 alert('Node is NOT  Activated');
             }
-
-        },function(){
+        }, function () {
             alert('Error in Deleting Record');
         });
-
-
-
-
     };
 
     // this one is to go to TRASH
     $scope.deleteRecord = function ($event, note, index) {
         idjsdel = note.idjs;
         var data = $scope.listnotes;
-        for(var i = 0; i < data.length; i++) {
-             if(data[i].idjs == idjsdel) {
+        for (var i = 0; i < data.length; i++) {
+            if (data[i].idjs == idjsdel) {
                 data[i].active = 0;
                 break;
             }
         }
-
 
         var getDataDel = myService.removeNote(idjsdel);
         getDataDel.then(function (msg) {
@@ -113,11 +102,9 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
             } else {
                 alert('Node is NOT Trashed');
             }
-
-        },function(){
+        }, function () {
             alert('Error in Deleting Record');
         });
-
     };
 
     // this is to FULL REMOVE FROM SERVER
@@ -125,8 +112,8 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
 
         idjsdel = note.idjs;
         data = $scope.listnotes;
-        for(var i = 0; i < data.length; i++) {
-             if(data[i].idjs == idjsdel) {
+        for (var i = 0; i < data.length; i++) {
+            if (data[i].idjs == idjsdel) {
                 data.splice(i, 1);
                 break;
             }
@@ -141,11 +128,9 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
             } else {
                 alert('Node is NOT Trashed');
             }
-
-        },function(){
+        }, function () {
             alert('Error in Deleting Record');
         });
-
     };
 
 
@@ -154,7 +139,7 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
         var getData = myService.getAllNotes();
         getData.then(function (emp) {
             if (emp.data.success) {
-                $scope.listnotes = emp.data.notes;
+                $scope.listnotes = emp.data.data;
             } else {
                 console.log("empty");
             }
@@ -163,8 +148,7 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
         });
     }
 
-
-     // ADD DIALOG
+    // ADD DIALOG
     $scope.showAdvanced = function (ev) {
         $mdDialog.show({
             controller: DialogController,
@@ -176,7 +160,6 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
 
         })
             .then(function (answer) {
-
 
                 $http({
                     method: 'POST',
@@ -219,7 +202,7 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
     }
 
     // EDIT DIALOG
-    function DialogController_update($scope, $mdDialog,dataToPass) {
+    function DialogController_update($scope, $mdDialog, dataToPass) {
 
         var vm = this;
         $scope.formdata = dataToPass;
@@ -235,7 +218,7 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
         };
     }
 
-    $scope.editRecord = function(ev, note, index) {
+    $scope.editRecord = function (ev, note, index) {
 
         $mdDialog.show({
             controller: DialogController_update,
@@ -244,12 +227,12 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
             targetEvent: ev,
             clickOutsideToClose: true,
             fullscreen: $scope.customFullscreen,
-            locals:{dataToPass: note},
+            locals: {dataToPass: note},
 
         })
             .then(function (answer) {
 
-                if (answer==0) {
+                if (answer == 0) {
                     $scope.status = "You say no to edit :) "
                 } else {
                     $http({
@@ -276,48 +259,68 @@ cr1.controller('mainController', function ($scope, $http, $route, $routeParams, 
             }, function () {
                 $scope.status = 'You cancelled the dialog.';
             });
-
-
     };
-
 
 });
 
-cr1.service("myService", function ($http) {
+cr1.service("myService", function ($http, $cookies) {
 
+
+    var favoriteCookie = $cookies.getObject('globals');
+
+    var sitelink = "http://godaddyserver/";
     //get All Notes
     this.getAllNotes = function () {
-        return $http.get("http://masinealati.rs/parametrigarden.php?action=getallnotes");
+
+        if (favoriteCookie) {
+            var response = $http({
+                method: "GET",
+                headers: {
+                    'Accept': 'application/json', //text/javascript
+                    'Content-Type': 'application/json; charset=utf-8',
+                    'authorization': 'Bearer ' + favoriteCookie.currentUser.authdata
+                },
+                //url: "http://masinealati.rs/parametrigarden.php?action=getallnotes"
+                url: sitelink + "api/1.0/all"
+            });
+            return response;
+        } else {
+            var response = $http({
+                method: "GET",
+                url: sitelink + "api/1.0/all"
+            });
+            return response;
+        }
     };
 
     //remove Note to TRASH
     this.removeNote = function (noteId) {
         var response = $http({
             method: "POST",
-            data : {'idjs' : noteId },
+            data: {'idjs': noteId},
             url: "http://masinealati.rs/parametrigarden.php?action=removenote"
         });
         return response;
         /*params: {
-            employeeId: JSON.stringify(employeeId)
-        }*/
+         employeeId: JSON.stringify(employeeId)
+         }*/
     };
 
     // SENT BACK TO NOTES
     this.sentBackToNotes = function (noteId) {
         var response = $http({
             method: "POST",
-            data : {'idjs' : noteId },
+            data: {'idjs': noteId},
             url: "http://masinealati.rs/parametrigarden.php?action=sentbacktonotes"
         });
         return response;
     };
 
     // CHANGE COLORO OF NOTE
-    this.changeColorService = function (noteId,boja) {
+    this.changeColorService = function (noteId, boja) {
         var response = $http({
             method: "POST",
-            data : {'idjs' : noteId, 'color' : boja },
+            data: {'idjs': noteId, 'color': boja},
             url: "http://masinealati.rs/parametrigarden.php?action=changecolor"
         });
         return response;
@@ -328,7 +331,7 @@ cr1.service("myService", function ($http) {
     this.fullRemoveFromNotesService = function (noteId) {
         var response = $http({
             method: "POST",
-            data : {'idjs' : noteId },
+            data: {'idjs': noteId},
             url: "http://masinealati.rs/parametrigarden.php?action=fullremovefromnodes"
         });
         return response;
@@ -336,4 +339,3 @@ cr1.service("myService", function ($http) {
 
 
 });
-
